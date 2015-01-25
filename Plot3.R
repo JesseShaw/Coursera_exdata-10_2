@@ -20,6 +20,6 @@ g <- ggplot(baltimore_emissions, aes(x = factor(year), y = Emissions, fill = typ
         xlab("Year") +
         ylab(expression('Total PM'[2]*' Emissions')) +
         ggtitle(expression('BALTIMORE: PM'[2.5]*paste(' EMISSIONS BY TYPE AND YEAR')))
-png("plot3.png", height = 480, width = 480)
+png("plot3.png", height = 640, width = 640)
 print(g)
 dev.off()

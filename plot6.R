@@ -26,7 +26,7 @@ g <- ggplot(total_emissions, aes(x = factor(year), y = Emissions, fill = County)
         facet_grid(County  ~ ., scales = "free") +
         xlab("Year") +
         ylab(expression('Total Emissions (tons)')) +
-        ggtitle('BALTIMORE and Los Angeles:\nVEHICLE EMISSIONS BY YEAR')
+        ggtitle('BALTIMORE AND LOS ANGELES:\nVEHICLE EMISSIONS BY YEAR')
 png("plot6.png", height = 480, width = 480)
 print(g)
 dev.off()
